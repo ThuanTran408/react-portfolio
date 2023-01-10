@@ -3,6 +3,9 @@ import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
 import Image from 'next/image';
 import cat from '../public/Cat.png';
+import code from '../public/code.png';
+import design from '../public/design.png';
+import consulting from '../public/consulting.png';
 
 
 
@@ -32,14 +35,43 @@ export default function Home() {
           </nav>
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium'>Thuan Tran</h2>
-            <h3 className='text-xl py-2'>Developer and Designer.</h3>
-            <p className='text-medium py-5 leading-8 text-gray-800'>A new Web Developer looking to create fun and interesting applications. Here's a snippet of some of work!</p>
+            <h3 className='text-xl py-2'>Web Developer</h3>
+            <p className='text-medium py-5 leading-8 text-gray-800'>A new Web Developer looking to create fun and interesting applications.</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillLinkedin />
           </div>
-          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden'>
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
             <Image src={cat} layout="fill" objectFit='cover'/>
+          </div>
+        </section>
+
+        <section>
+          <div className='text-center'>
+            <h3 className='text-3xl py-1'>Technologies I've Used!</h3>
+            <p className='text-md py-2 leading-8 text-gray-800'>Since the beginning of my coding journey, I have always been inspired by easy-to-use and clean looking User Interface. </p>
+            <p>**MY STRENGTHS AND SERVICES LISTED HERE**</p>
+          </div>
+          <div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={design} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
+              <p className='py-2'>Here are some projects, I have worked on!</p>
+              <h4 className='py-4 text-teal-600'>My Projects</h4>
+              <p className='text-gray-800 py-1'>FitnessTrackr</p>
+              <p className='text-gray-800 py-1'>Graceshopper - Sticky Situations Stickers</p>
+              <p className='text-gray-800 py-1'>Project 3...IN PROCESS</p>
+            </div>
+
+            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={consulting} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>ABOUT ME</h3>
+              <p className='py-2'>When I'm not coding, I love doing all these things!</p>
+              <h4 className='py-4 text-teal-600'>Hobbies</h4>
+              <p className='text-gray-800 py-1'>Hobby 1</p>
+              <p className='text-gray-800 py-1'>Hobby 2</p>
+              <p className='text-gray-800 py-1'>Hooby 3</p>
+            </div>
           </div>
         </section>
       </main>
