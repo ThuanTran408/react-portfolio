@@ -1,12 +1,22 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
-import { AiFillLinkedin } from 'react-icons/ai';
+import { AiFillLinkedin, AiFillGithub, AiFillFacebook } from 'react-icons/ai';
 import Image from 'next/image';
 import cat from '../public/Cat.png';
 import code from '../public/code.png';
 import design from '../public/design.png';
 import consulting from '../public/consulting.png';
-import {DiJsBadge, DiReact} from 'react-icons/di'
+import GraceShopper from '../public/GraceShopper.png';
+import GraceShopper2 from '../public/GraceShopper2.png';
+import GraceShopper3 from '../public/GraceShopper3.png';
+import FitnessTrackr from '../public/FitnessTrackr.png';
+import FitnessTrackr2 from '../public/FitnessTrackr2.png';
+import StrangersThings from '../public/StrangersThings.png';
+import StrangersThings2 from '../public/StrangersThings2.png';
+import ArtCollector1 from '../public/ArtCollector1.png';
+import ArtCollector2 from '../public/ArtCollector2.png';
+
+import {DiJsBadge, DiReact} from 'react-icons/di';
 import { useState } from 'react';
 
 
@@ -21,10 +31,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
+      <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900 '>
         <section className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl'>developedbythuan</h1>
+          <nav className='py-10 mb-12 flex justify-between '>
+            <h1 className='text-xl dark:text-white'>developedbythuan</h1>
             <ul className='flex items-center'>
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode) } className='cursor-pointer text-2xl'/>
@@ -37,12 +47,14 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Thuan Tran</h2>
-            <h3 className='text-xl py-2'>Web Developer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>A new Web Developer looking to create fun and interesting applications.</p>
+            <h2 className='text-5xl font-bold py-2 text-teal-600 font-medium md:text-6xl'>Thuan Tran</h2>
+            <h3 className='text-xl py-2  dark:text-white'>Web Developer</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto  dark:text-white'>A new developer looking to create fun and interesting web applications.</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
             <AiFillLinkedin />
+            <AiFillGithub />
+            <AiFillFacebook />
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
             <Image src={cat} layout="fill" objectFit='cover'/>
@@ -52,39 +64,80 @@ export default function Home() {
 
         <section>
           <div className='text-center'>
-            <h3 className='text-3xl py-1'>Technologies I've Used!</h3>
-            <div>
+            <h3 className='text-3xl py-1  dark:text-white'>Technologies I've Used!</h3>
+            <div className=' dark:bg-white'>
             <DiJsBadge />
             <DiReact /> 
             </div>
-            <p className='text-md py-2 leading-8 text-gray-800'>Since the beginning of my coding journey, I have always been inspired by easy-to-use and clean looking User Interface. </p>
-            <p>**MY STRENGTHS AND SERVICES LISTED HERE**</p>
+            <p className='text-md py-2 leading-8 text-gray-800  dark:text-white'>Since the beginning of my coding journey, I have always been inspired by easy-to-use and clean looking User Interface. </p>
+            {/* <p className='dark:text-white'>**MY STRENGTHS AND SERVICES LISTED HERE**</p> */}
           </div>
           <div className='lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white'>
               <Image src={design} width={100} height={100} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful designs</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2  dark:bg-white'>Beautiful designs</h3>
               <p className='py-2'>Here are some projects, I have worked on!</p>
-              <h4 className='py-4 text-teal-600'>My Projects</h4>
+              <h4 className='py-4 text-teal-600  dark:bg-white'>My Projects</h4>
               <p className='text-gray-800 py-1'>FitnessTrackr</p>
               <p className='text-gray-800 py-1'>Graceshopper - Sticky Situations Stickers</p>
-              <p className='text-gray-800 py-1'>Project 3...IN PROCESS</p>
+              <p className='text-gray-800 py-1'>Project 3...Coming soon</p>
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <Image src={consulting} width={100} height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>ABOUT ME</h3>
               <p className='py-2'>When I'm not coding, I love doing all these things!</p>
               <h4 className='py-4 text-teal-600'>Hobbies</h4>
-              <p className='text-gray-800 py-1'>Hobby 1</p>
-              <p className='text-gray-800 py-1'>Hobby 2</p>
-              <p className='text-gray-800 py-1'>Hooby 3</p>
+              <p className='text-gray-800 py-1'>Cheering for the Golden State Warriors</p>
+              <p className='text-gray-800 py-1'>Being a foodie</p>
+              <p className='text-gray-800 py-1'>Working on my fitness goals</p>
+            </div>
+
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+              <Image src={code} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2'>Another section</h3>
+              <p className='py-2'>Blah, blah, blah, blah</p>
+              <h4 className='py-4 text-teal-600'>Blah</h4>
+              <p className='text-gray-800 py-1'>Blah</p>
+              <p className='text-gray-800 py-1'>Blah</p>
+              <p className='text-gray-800 py-1'>Blah, blah</p>
             </div>
           </div>
         </section>
         <section>
-          <div>
-            <h3 className='text-3xl py-1'>Another Section</h3>
+          <div className='text-center dark:text-white'>
+            <h3 className='text-3xl py-1'>Portfolio</h3>
+            <p className='text-md py-2 leading-8 text-gray-800  dark:text-white'>Here are some of the projects I've worked on! </p>
+            {/* <p className='dark:text-white'>**MY STRENGTHS AND SERVICES LISTED HERE**</p> */}
+          </div>
+          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+            <div className='basis-1/3 flex-1'>
+              <Image src={GraceShopper} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={GraceShopper3} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={GraceShopper2} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={FitnessTrackr} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={FitnessTrackr2} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={ArtCollector1} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={ArtCollector2}className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+            </div>
+            <div className='basis-1/3 flex-1'>
+              <Image src={StrangersThings} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+            </div>
+            {/* <div className='basis-1/3 flex-1'>
+              <Image src={StrangersThings2} className="rounded-lg object-cover" width={"100%"} height={"100%"} layout="responsive"/>
+            </div> */}
 
           </div>
         </section>
