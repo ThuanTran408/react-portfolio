@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillLinkedin, AiFillGithub, AiFillFacebook } from 'react-icons/ai';
+import { HiChevronDoubleLeft, HiChevronDoubleDown, HiChevronDoubleRight } from "react-icons/hi";
 import Image from 'next/image';
 import cat from '../public/Cat.png';
 import code from '../public/code.png';
@@ -52,9 +53,9 @@ export default function Home() {
             <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto  dark:text-white'>A new developer looking to create fun and interesting web applications.</p>
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <AiFillLinkedin />
-            <AiFillGithub />
-            <AiFillFacebook />
+            <a href='https://www.linkedin.com/in/thuantran408/' target="_blank"><AiFillLinkedin/></a>
+            <a href='https://www.facebook.com/thuantran408/' target="_blank"><AiFillFacebook/></a>
+            <a href='https://github.com/ThuanTran408' target="_blank"><AiFillGithub/></a>
           </div>
           <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
             <Image src={cat} layout="fill" objectFit='cover'/>
@@ -69,22 +70,22 @@ export default function Home() {
             <DiJsBadge />
             <DiReact /> 
             </div>
-            <p className='text-md py-2 leading-8 text-gray-800  dark:text-white'>Since the beginning of my coding journey, I have always been inspired by easy-to-use and clean looking User Interface. </p>
+            <p className='text-md py-2 leading-8 text-gray-800  dark:text-white'>Since the beginning of my coding journey, I have always been inspired by easy-to-use and clean looking user interface. </p>
             {/* <p className='dark:text-white'>**MY STRENGTHS AND SERVICES LISTED HERE**</p> */}
           </div>
-          <div className='lg:flex gap-10'>
+          <div className='lg:flex gap-10 text-center'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white'>
-              <Image src={design} width={100} height={100} />
+              <center><HiChevronDoubleLeft width={100} height={100} /></center>
               <h3 className='text-lg font-medium pt-8 pb-2  dark:bg-white'>Beautiful designs</h3>
               <p className='py-2'>Here are some projects, I have worked on!</p>
               <h4 className='py-4 text-teal-600  dark:bg-white'>My Projects</h4>
               <p className='text-gray-800 py-1'>FitnessTrackr</p>
               <p className='text-gray-800 py-1'>Graceshopper - Sticky Situations Stickers</p>
-              <p className='text-gray-800 py-1'>Project 3...Coming soon</p>
+              <p className='text-gray-800 py-1'>Strangers Things - Buy/Sell/Trade</p>
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <Image src={consulting} width={100} height={100} />
+              <center><HiChevronDoubleDown width={100} height={100} /></center>
               <h3 className='text-lg font-medium pt-8 pb-2'>ABOUT ME</h3>
               <p className='py-2'>When I'm not coding, I love doing all these things!</p>
               <h4 className='py-4 text-teal-600'>Hobbies</h4>
@@ -94,9 +95,9 @@ export default function Home() {
             </div>
 
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <Image src={code} width={100} height={100} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Another section</h3>
-              <p className='py-2'>Blah, blah, blah, blah</p>
+              <center><HiChevronDoubleRight width={100} height={100} /></center>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Fun Links</h3>
+              <p className='py-2'>Blah, blah, blah, blah, blah</p>
               <h4 className='py-4 text-teal-600'>Blah</h4>
               <p className='text-gray-800 py-1'>Blah</p>
               <p className='text-gray-800 py-1'>Blah</p>
@@ -106,8 +107,8 @@ export default function Home() {
         </section>
         <section>
           <div className='text-center dark:text-white'>
-            <h3 className='text-3xl py-1'>Portfolio</h3>
-            <p className='text-md py-2 leading-8 text-gray-800  dark:text-white'>Here are some of the projects I've worked on! </p>
+            <h3 className='text-3xl mt-5 py-1'>Portfolio</h3>
+            <p className='text-md py-2 leading-8 text-gray-800  dark:text-white'>During my immersive bootcamp at Full Stack Academy, I worked on a variety of different projects designed to build coding fundamentals and spark innovation. With no tech background and with projects due every week, I took on the challenge to learn how to code. Here are some of the projects I worked on during my learning experience. </p>
             {/* <p className='dark:text-white'>**MY STRENGTHS AND SERVICES LISTED HERE**</p> */}
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
